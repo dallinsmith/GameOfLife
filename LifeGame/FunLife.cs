@@ -276,16 +276,16 @@ namespace LifeGame
 
     private void pentButton_Click(object sender, EventArgs e)
     {
-      if (_gridSize < 3)
+      if (_gridSize < 10)
       {
-        MessageBox.Show(@"Sorry. You must have a grid large enouph for the R-pentimino. (> 2)");
+        MessageBox.Show(@"Sorry. You must have a grid large enouph for the R-pentimino. (> 9)");
       }
       RestartBoard();
-      _thisGeneration[1, 0].BackColor = Color.Black;
-      _thisGeneration[2, 0].BackColor = Color.Black;
-      _thisGeneration[0, 1].BackColor = Color.Black;
-      _thisGeneration[1, 1].BackColor = Color.Black;
-      _thisGeneration[1, 2].BackColor = Color.Black;
+      _thisGeneration[6, 5].BackColor = Color.Black;
+      _thisGeneration[7, 5].BackColor = Color.Black;
+      _thisGeneration[5, 6].BackColor = Color.Black;
+      _thisGeneration[6, 6].BackColor = Color.Black;
+      _thisGeneration[6, 7].BackColor = Color.Black;
     }
   }
 
