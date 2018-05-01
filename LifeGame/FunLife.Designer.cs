@@ -35,11 +35,13 @@
       this.gridSizeBox = new System.Windows.Forms.TextBox();
       this.label2 = new System.Windows.Forms.Label();
       this.panelSizeBox = new System.Windows.Forms.TextBox();
+      this.gliderButton = new System.Windows.Forms.Button();
+      this.pentButton = new System.Windows.Forms.Button();
       this.SuspendLayout();
       // 
       // startCyclesButton
       // 
-      this.startCyclesButton.Location = new System.Drawing.Point(1015, 290);
+      this.startCyclesButton.Location = new System.Drawing.Point(1253, 290);
       this.startCyclesButton.Name = "startCyclesButton";
       this.startCyclesButton.Size = new System.Drawing.Size(100, 23);
       this.startCyclesButton.TabIndex = 0;
@@ -49,7 +51,7 @@
       // 
       // nextCycleButton
       // 
-      this.nextCycleButton.Location = new System.Drawing.Point(1015, 334);
+      this.nextCycleButton.Location = new System.Drawing.Point(1253, 334);
       this.nextCycleButton.Name = "nextCycleButton";
       this.nextCycleButton.Size = new System.Drawing.Size(100, 23);
       this.nextCycleButton.TabIndex = 1;
@@ -60,7 +62,7 @@
       // restartButton
       // 
       this.restartButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-      this.restartButton.Location = new System.Drawing.Point(1015, 204);
+      this.restartButton.Location = new System.Drawing.Point(1253, 204);
       this.restartButton.Name = "restartButton";
       this.restartButton.Size = new System.Drawing.Size(100, 23);
       this.restartButton.TabIndex = 2;
@@ -71,41 +73,66 @@
       // label1
       // 
       this.label1.AutoSize = true;
-      this.label1.Location = new System.Drawing.Point(1015, 96);
+      this.label1.Location = new System.Drawing.Point(1253, 96);
       this.label1.Name = "label1";
       this.label1.Size = new System.Drawing.Size(79, 13);
       this.label1.TabIndex = 6;
-      this.label1.Text = "Grid Size (1-80)";
+      this.label1.Text = "Grid Size (2-80)";
       // 
       // gridSizeBox
       // 
-      this.gridSizeBox.Location = new System.Drawing.Point(1015, 114);
+      this.gridSizeBox.Location = new System.Drawing.Point(1253, 114);
+      this.gridSizeBox.MaxLength = 2;
       this.gridSizeBox.Name = "gridSizeBox";
       this.gridSizeBox.Size = new System.Drawing.Size(100, 20);
       this.gridSizeBox.TabIndex = 5;
-      this.gridSizeBox.TextChanged += new System.EventHandler(this.gridSizeBox_TextChanged);
+      this.gridSizeBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gridSizeBox_KeyPress);
       // 
       // label2
       // 
       this.label2.AutoSize = true;
-      this.label2.Location = new System.Drawing.Point(1015, 149);
+      this.label2.Location = new System.Drawing.Point(1253, 149);
       this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(87, 13);
+      this.label2.Size = new System.Drawing.Size(100, 13);
       this.label2.TabIndex = 8;
-      this.label2.Text = "Panel Size (5-25)";
+      this.label2.Text = "Creature Size (5-15)";
       // 
       // panelSizeBox
       // 
-      this.panelSizeBox.Location = new System.Drawing.Point(1015, 167);
+      this.panelSizeBox.Location = new System.Drawing.Point(1253, 167);
+      this.panelSizeBox.MaxLength = 2;
       this.panelSizeBox.Name = "panelSizeBox";
       this.panelSizeBox.Size = new System.Drawing.Size(100, 20);
       this.panelSizeBox.TabIndex = 7;
+      this.panelSizeBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.panelSizeBox_KeyPress);
+      // 
+      // gliderButton
+      // 
+      this.gliderButton.Location = new System.Drawing.Point(1253, 399);
+      this.gliderButton.Name = "gliderButton";
+      this.gliderButton.Size = new System.Drawing.Size(100, 23);
+      this.gliderButton.TabIndex = 9;
+      this.gliderButton.Text = "Glider";
+      this.gliderButton.UseVisualStyleBackColor = true;
+      this.gliderButton.Click += new System.EventHandler(this.gliderButton_Click);
+      // 
+      // pentButton
+      // 
+      this.pentButton.Location = new System.Drawing.Point(1253, 428);
+      this.pentButton.Name = "pentButton";
+      this.pentButton.Size = new System.Drawing.Size(100, 23);
+      this.pentButton.TabIndex = 10;
+      this.pentButton.Text = "R-pentiomino";
+      this.pentButton.UseVisualStyleBackColor = true;
+      this.pentButton.Click += new System.EventHandler(this.pentButton_Click);
       // 
       // FunLifeForm
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(1239, 765);
+      this.ClientSize = new System.Drawing.Size(1361, 765);
+      this.Controls.Add(this.pentButton);
+      this.Controls.Add(this.gliderButton);
       this.Controls.Add(this.label2);
       this.Controls.Add(this.panelSizeBox);
       this.Controls.Add(this.label1);
@@ -130,6 +157,8 @@
     private System.Windows.Forms.TextBox gridSizeBox;
     private System.Windows.Forms.Label label2;
     private System.Windows.Forms.TextBox panelSizeBox;
+    private System.Windows.Forms.Button gliderButton;
+    private System.Windows.Forms.Button pentButton;
   }
 }
 

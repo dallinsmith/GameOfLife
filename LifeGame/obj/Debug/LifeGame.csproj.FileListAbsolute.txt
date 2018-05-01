@@ -12,3 +12,14 @@ c:\users\dls\documents\visual studio 2015\Projects\LifeGame\LifeGame\bin\Debug\F
 D:\GameOfLife\LifeGame\LifeGame\bin\Debug\LifeGame.exe.config
 D:\GameOfLife\LifeGame\LifeGame\obj\Debug\LifeGame.exe
 D:\GameOfLife\LifeGame\LifeGame\obj\Debug\LifeGame.pdb
+D:\GameOfLife\LifeGame\bin\Debug\LifeGame.exe.config
+D:\GameOfLife\LifeGame\obj\Debug\LifeGame.exe
+D:\GameOfLife\LifeGame\obj\Debug\LifeGame.pdb
+D:\GameOfLife\LifeGame\bin\Debug\LifeGame.exe
+D:\GameOfLife\LifeGame\bin\Debug\LifeGame.pdb
+D:\GameOfLife\LifeGame\obj\Debug\LifeGame.csprojResolveAssemblyReference.cache
+D:\GameOfLife\LifeGame\obj\Debug\LifeGame.FunLifeForm.resources
+D:\GameOfLife\LifeGame\obj\Debug\LifeGame.Properties.Resources.resources
+D:\GameOfLife\LifeGame\obj\Debug\LifeGame.csproj.GenerateResource.Cache
+D:\GameOfLife\LifeGame\bin\Debug\DrawablePicturebox.dll
+D:\GameOfLife\LifeGame\bin\Debug\FastImageHelper.dll
